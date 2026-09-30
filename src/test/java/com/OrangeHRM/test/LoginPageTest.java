@@ -24,6 +24,7 @@ public class LoginPageTest extends baseClass{
 		homePage  = new HomePage(getDriver());
 	}
 
+	// this validLoginData dataProvider is a method in dataProvider class that will return data of sheet named validLoginData
 	@Test(dataProvider="validLoginData", dataProviderClass = DataProviders.class)
 	public void verifyValidLoginTest(String username, String password) {
 		//ExtentManager.startTest("Valid Login Test");
