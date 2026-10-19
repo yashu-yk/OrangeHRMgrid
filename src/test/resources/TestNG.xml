@@ -1,5 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
-<suite name="OrangeHrMSuite" parallel="tests" thread-count="7">
+<!-- <suite name="OrangeHrMSuite" parallel="tests" thread-count="7"> -->
+<suite name="OrangeHrMSuite" parallel="false">
 	<listeners>
 	<listener class-name="com.OrangeHRM.listeners.TestListener"></listener>
 	</listeners>
