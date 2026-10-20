@@ -127,7 +127,8 @@ public class baseClass {
 				driver.set(new FirefoxDriver(options)); // New Changes as per Thread
 				ExtentManager.registerDriver(getDriver());
 				logger.info("FirefoxDriver Instance is created.");
-			// } else if (browser.equalsIgnoreCase("edge")) {
+			 } 
+			//else if (browser.equalsIgnoreCase("edge")) {
 
 			// 	EdgeOptions options = new EdgeOptions();
 			// 	options.addArguments("--headless"); // Run Edge in headless mode
