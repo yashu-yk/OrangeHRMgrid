@@ -127,18 +127,25 @@ public class baseClass {
 				driver.set(new FirefoxDriver(options)); // New Changes as per Thread
 				ExtentManager.registerDriver(getDriver());
 				logger.info("FirefoxDriver Instance is created.");
-			} else if (browser.equalsIgnoreCase("edge")) {
+			// } else if (browser.equalsIgnoreCase("edge")) {
 
+			// 	EdgeOptions options = new EdgeOptions();
+			// 	options.addArguments("--headless"); // Run Edge in headless mode
+			// 	options.addArguments("--disable-gpu"); // Disable GPU acceleration
+			// 	options.addArguments("--window-size=1920,1080"); // Set window size
+			// 	options.addArguments("--disable-notifications"); // Disable pop-up notifications
+			// 	options.addArguments("--no-sandbox"); // Needed for CI/CD
+			// 	options.addArguments("--disable-dev-shm-usage"); // Prevent resource-limited crashes
+
+			// 	// driver = new EdgeDriver();
+			// 	driver.set(new EdgeDriver(options)); // New Changes as per Thread
+				else if (browser.equalsIgnoreCase("edge")) {
 				EdgeOptions options = new EdgeOptions();
-				options.addArguments("--headless"); // Run Edge in headless mode
-				options.addArguments("--disable-gpu"); // Disable GPU acceleration
-				options.addArguments("--window-size=1920,1080"); // Set window size
-				options.addArguments("--disable-notifications"); // Disable pop-up notifications
-				options.addArguments("--no-sandbox"); // Needed for CI/CD
-				options.addArguments("--disable-dev-shm-usage"); // Prevent resource-limited crashes
+   				options.addArguments("--headless=new");
+    			options.addArguments("--window-size=1920,1080");
+    			options.addArguments("--disable-notifications");
 
-				// driver = new EdgeDriver();
-				driver.set(new EdgeDriver(options)); // New Changes as per Thread
+    			driver.set(new EdgeDriver(options));
 				ExtentManager.registerDriver(getDriver());
 				logger.info("EdgeDriver Instance is created.");
 			} else {
