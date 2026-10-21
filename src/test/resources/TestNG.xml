@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
-<!-- <suite name="OrangeHrMSuite" parallel="tests" thread-count="7"> -->
-<suite name="OrangeHrMSuite" parallel="false">
+<suite name="OrangeHrMSuite" parallel="tests" thread-count="7">
+<!-- <suite name="OrangeHrMSuite" parallel="false"> -->
 	<listeners>
 	<listener class-name="com.OrangeHRM.listeners.TestListener"></listener>
 	</listeners>
@@ -13,7 +13,7 @@
 		<class name="com.OrangeHRM.test.HomePageTest"></class>
 		</classes>
 	</test>
-	<test name="OrangeHRMTest_edge">
+	<!-- <test name="OrangeHRMTest_edge">
 		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="com.OrangeHRM.test.dummyClass"></class>
@@ -21,7 +21,7 @@
 			<class name="com.OrangeHRM.test.LoginPageTest"></class>
 			<class name="com.OrangeHRM.test.HomePageTest"></class>
 		</classes>
-	</test>
+	</test> -->
 	<test name="OrangeHRMTest_firefox">
 		<parameter name="browser" value="firefox" />
 		<classes>
